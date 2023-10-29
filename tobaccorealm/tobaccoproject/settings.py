@@ -33,7 +33,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'tobaccorealm.urls'
+ROOT_URLCONF = 'tobaccoproject.urls'
 
 TEMPLATES = [
     {
@@ -51,7 +51,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'tobaccorealm.wsgi.application'
+WSGI_APPLICATION = 'tobaccoproject.wsgi.application'
 
 
 # Database
