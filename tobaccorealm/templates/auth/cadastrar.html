@@ -3,7 +3,54 @@
     Tobacco Realm
 {% endblock title %}
 
-{% block form %}
-    <h1 data-aos="fade-down"></h1>
-{% endblock form %}
+{% block body %}
+<section id="contact" clss="contact">
+    <div class="container">
+
+<div class="section-title" data-aos="fade-up">
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+<h1 data-aos="fade-up"> Cadastrar </h1>
+<div class="container" data-aos="fade-up" data-aos-delay="400">
+</div>
+    <form action="/signup" method="post"> <input type="hidden" name="csrmiddlewaretoken" value="ASDADADSADSADGFDGDS">
+        <br>
+    
+    <label for="email">Email</label>
+    <div class="form-group">
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+
+    <label for="pass1">Senha</label>
+    <div class="form-group">
+        <input type="password" class="form-control" id="pass1" name="pass1" required>
+    </div>
+
+    <label for="pass2">Confirmar Senha</label>
+    <div class="form-group">
+        <input type="password" class="form-control" id="pass2" name="pass2" required>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-success btn-sm btn-block">Cadastrar</button>
+    <br>
+    Já é cadastrado? <a href="/login">Entrar</a>
+    <br>
+    <a href="/">Home</a>
+    </form>
+</div>
+</div>
+<div class="col-md-6">  </div>
+</div>
+</div>
+</div>
+</section>
+{% endblock body %}
 
